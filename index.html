@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Document</title>
+
+</head>
+<body class="bg-white justify-center items-center h-screen ">
+    <!-- The goal is to create a calculator with javascript -->
+     <div  class="bg-gray p-6 rounded-lg">
+        <h1>Batourcor's calculator</h1>
+        <div id="ecran" class="bg-gray-900 text-white text-right py-2 px-4 rounded-md mb-4 text-2xl">0</div>
+        <div class="grid grid-cols-4 gap-2">
+            <button class="bg-gray-200 p-4 rounded" onclick="ajouterValeur('7')">7</button>
+            <button class="bg-gray-200 p-4 rounded" onclick="ajouterValeur('8')">8</button>
+            <button class="bg-gray-200 p-4 rounded" onclick="ajouterValeur('9')">9</button>
+            <button class="bg-blue-400 text-white p-4 rounded" onclick="ajouterValeur('/')">/</button>
+
+            <button class="bg-gray-200 p-4 rounded" onclick="ajouterValeur('4')">4</button>
+            <button class="bg-gray-200 p-4 rounded" onclick="ajouterValeur('5')">5</button>
+            <button class="bg-gray-200 p-4 rounded" onclick="ajouterValeur('6')">6</button>
+            <button class="bg-blue-400 text-white p-4 rounded" onclick="ajouterValeur('*')">*</button>
+
+            <button class="bg-gray-200 p-4 rounded" onclick="ajouterValeur('1')">1</button>
+            <button class="bg-gray-200 p-4 rounded" onclick="ajouterValeur('2')">2</button>
+            <button class="bg-gray-200 p-4 rounded" onclick="ajouterValeur('3')">3</button>
+            <button class="bg-blue-400 text-white p-4 rounded" onclick="ajouterValeur('-')">-</button>
+
+            <button class="bg-gray-200 p-4 rounded" onclick="ajouterValeur('0')">0</button>
+            <button class="bg-gray-200 p-4 rounded" onclick="ajouterValeur('.')">.</button>
+            <button class="bg-green-500 text-white p-4 rounded" onclick="calculer()">=</button>
+            <button class="bg-blue-400 text-white p-4 rounded" onclick="ajouterValeur('+')">+</button>
+        </div>
+        <button class="mt-4 bg-red-500 text-white w-full py-2 rounded" onclick="effacer()">Effacer</button>
+
+     </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
